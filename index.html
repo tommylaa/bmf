@@ -76,13 +76,20 @@
             Send over your requirements and we will come back with the right next step.
           </p>
 
-          <form>
-            <input type="text" placeholder="Full name" />
-            <input type="email" placeholder="Email address" />
-            <input type="text" placeholder="Phone number" />
-            <textarea rows="5" placeholder="Brief description of the work"></textarea>
-            <button type="submit" class="btn btn-dark full-width">Submit Enquiry</button>
-          </form>
+<form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+  <input type="hidden" name="access_key" value="a853bdbc-a798-4d40-8233-b5215bf37855" />
+  <input type="hidden" name="subject" value="New quote request from BMF website" />
+  <input type="hidden" name="from_name" value="BMF Website" />
+  <input type="checkbox" name="botcheck" style="display: none;" />
+
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="text" name="phone" placeholder="Phone" />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="text" name="area" placeholder="Postcode / Area" />
+  <textarea name="message" rows="6" placeholder="Tell us about the work required" required></textarea>
+
+  <button type="submit" class="btn btn-primary full-width">Send Quote Request</button>
+</form>
         </div>
       </div>
     </div>
@@ -245,14 +252,20 @@
           This form can later be connected to email handling or a web form service.
         </p>
 
-        <form class="quote-form">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Phone" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Postcode / Area" />
-          <textarea rows="6" placeholder="Tell us about the work required"></textarea>
-          <button type="submit" class="btn btn-primary full-width">Send Quote Request</button>
-        </form>
+<form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+  <input type="hidden" name="access_key" value="a853bdbc-a798-4d40-8233-b5215bf37855" />
+  <input type="hidden" name="subject" value="New quote request from BMF website" />
+  <input type="hidden" name="from_name" value="BMF Website" />
+  <input type="checkbox" name="botcheck" style="display: none;" />
+
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="text" name="phone" placeholder="Phone" />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="text" name="area" placeholder="Postcode / Area" />
+  <textarea name="message" rows="6" placeholder="Tell us about the work required" required></textarea>
+
+  <button type="submit" class="btn btn-primary full-width">Send Quote Request</button>
+</form>
       </div>
     </div>
   </section>
