@@ -416,8 +416,7 @@ form textarea:focus {
 }
 
 .contact-box h3 {
-  font-size: 28px;
-  word-break: break-word;
+  line-height: 1.6;
 }
 
 /* Quote */
